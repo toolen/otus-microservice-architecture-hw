@@ -80,24 +80,24 @@
 `GET /api/v1/licenses/{id}/images` - возвращает список артефактов доступных для скачивания по лицензии
 
 ### Сервис нотификаций
-`GET /api/v1/notifications` - возвращает список нотификаций
-`POST /api/v1/notifications` - созадёт нотификацию
-`PATCH /api/v1/notifications/{id}` - редактирует нотификацию
-`DELETE /api/v1/notifications/{id}` - удаляет нотификацию
+`GET /api/v1/notifications` - возвращает список нотификаций  
+`POST /api/v1/notifications` - созадёт нотификацию  
+`PATCH /api/v1/notifications/{id}` - редактирует нотификацию  
+`DELETE /api/v1/notifications/{id}` - удаляет нотификацию  
 
 ### Сервис запросов в техническую поддержку
-`GET /api/v1/issues` - возвращает список запросов
-`POST /api/v1/issues` - создаёт запрос ТП
-`PATCH /api/v1/issues/{id}` - редактирует запрос ТП
-`GET /api/v1/issues/{id}/comments` - возвращает список комментариев к запросу ТП
-`POST /api/v1/issues/{id}/comments` - создаёт комментарий к запросу ТП
-`PATCH /api/v1/issues/{id}/comments/{id}` - редактирует комментарий к запросу ТП
-`DELET /api/v1/issues/{id}/comments/{id}` - удаляет комментарий к запросу ТП
-`GET /api/v1/issues/{id}/attachments` - возвращает список атачментов к запросу ТП
-`GET /api/v1/issues/{id}/attachments/{id}` - скачивание конкретного атачмента запроса ТП
-`DELETE /api/v1/issues/{id}/attachments/{id}` - удаление конкретного атачмента запроса ТП
+`GET /api/v1/issues` - возвращает список запросов  
+`POST /api/v1/issues` - создаёт запрос ТП  
+`PATCH /api/v1/issues/{id}` - редактирует запрос ТП  
+`GET /api/v1/issues/{id}/comments` - возвращает список комментариев к запросу ТП  
+`POST /api/v1/issues/{id}/comments` - создаёт комментарий к запросу ТП  
+`PATCH /api/v1/issues/{id}/comments/{id}` - редактирует комментарий к запросу ТП  
+`DELET /api/v1/issues/{id}/comments/{id}` - удаляет комментарий к запросу ТП  
+`GET /api/v1/issues/{id}/attachments` - возвращает список атачментов к запросу ТП  
+`GET /api/v1/issues/{id}/attachments/{id}` - скачивание конкретного атачмента запроса ТП  
+`DELETE /api/v1/issues/{id}/attachments/{id}` - удаление конкретного атачмента запроса ТП  
 
 ### Сервис отчётов
-`GET /api/v1/licenses?format={pdf|csv|xlsx}&cabinet_id={id}` - генерирует список лицензий организации пользователя в указаном формате, сотрудники могу передать идентификатор интересующей организации
-`GET /api/v1/certificates?format={pdf|csv|xlsx}&cabinet_id={id}` - генерирует список сертификатов организации пользователя в указаном формате, сотрудники могу передать идентификатор интересующей организации
-`GET /api/v1/issues?format={pdf|csv|xlsx}&cabinet_id={id}` - генерирует список запросов ТП организации пользователя в указаном формате, сотрудники могу передать идентификатор интересующей организации
+`GET /api/v1/licenses?format={pdf|csv|xlsx}&cabinet_id={id}` - генерирует список лицензий организации пользователя в указаном формате, сотрудники могу передать идентификатор интересующей организации  
+`GET /api/v1/certificates?format={pdf|csv|xlsx}&cabinet_id={id}` - генерирует список сертификатов организации пользователя в указаном формате, сотрудники могу передать идентификатор интересующей организации  
+`GET /api/v1/issues?format={pdf|csv|xlsx}&cabinet_id={id}` - генерирует список запросов ТП организации пользователя в указаном формате, сотрудники могу передать идентификатор интересующей организации  
