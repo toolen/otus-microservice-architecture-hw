@@ -3,3 +3,4 @@
 
 Домашние задания:
 1. [Паттерны декомпозиции микросервисов](https://github.com/toolen/otus-microservice-architecture-hw/tree/hw-01)
+2. [Приложение в docker-образ и запушить его на Dockerhub](https://github.com/toolen/otus-microservice-architecture-hw/tree/hw-02)
