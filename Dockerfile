@@ -40,15 +40,13 @@ ENV \
     PIP_NO_CACHE_DIR=off \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
-    # passgen
-    PASSGEN_CORS_ENABLED="True" \
     # gunicorn
     GUNICORN_CMD_ARGS="--workers=2 --threads=4"
 
 RUN set -ex \
     && apk upgrade \
     && apk add --no-cache \
-        tini==0.19.0-r1 \
+        tini==0.19.0-r3 \
     && addgroup -g 1000 -S app \
     && adduser -h /app -G app -S -u 1000 app
 
