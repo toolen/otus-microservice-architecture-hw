@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hw02-ingress
+spec:
+  rules:
+  - host: "arch.homework"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: hw02-service
+            port:
+              number: 80
