@@ -14,9 +14,14 @@ spec:
       labels:
         app: hw02
     spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
       containers:
       - name: hw02
-        image: toolen/hw02:latest
+        image: toolen/hw02:0.0.1
         ports:
         - containerPort: 8000
         livenessProbe:
@@ -25,3 +30,12 @@ spec:
             port: 8000
           initialDelaySeconds: 5
           periodSeconds: 60
+        resources:
+          limits:
+            cpu: 100m
+            memory: 64Mi
+          requests:
+            cpu: 50m
+            memory: 32Mi
+        securityContext:
+          readOnlyRootFilesystem: true

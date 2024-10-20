@@ -4,7 +4,7 @@ metadata:
   name: hw02-service
 spec:
   selector:
-    app.kubernetes.io/name: hw02
+    app: hw02
   ports:
     - protocol: TCP
       port: 80
