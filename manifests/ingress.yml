@@ -3,12 +3,13 @@ kind: Ingress
 metadata:
   name: hw02-ingress
 spec:
+  ingressClassName: nginx
   rules:
   - host: "arch.homework"
     http:
       paths:
-      - pathType: Prefix
-        path: "/"
+      - path: "/"
+        pathType: Prefix
         backend:
           service:
             name: hw02-service
