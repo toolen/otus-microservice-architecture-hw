@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hw"
+version = "0.1.0"
+description = ""
+authors = ["Дмитрий Захаров <dmitrii@zakharov.cc>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "3.10.10"
+aiopg = {version = "1.4.0", extras = ["sa"]}
+alembic = "1.14.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+pytest-aiohttp = "^1.0.5"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
